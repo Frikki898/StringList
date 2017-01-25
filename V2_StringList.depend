@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1485360675 source:d:\forritun\v2_stringlist\main.cpp
+	<iostream>
+	"StringList.h"
+
+1485353369 d:\forritun\v2_stringlist\stringlist.h
+	<iostream>
+	<string>
+	"StringNode.h"
+
+1485250897 d:\forritun\v2_stringlist\stringnode.h
+	<string>
+
+1485250986 source:d:\forritun\v2_stringlist\stringnode.cpp
+	"StringNode.h"
+
+1485360357 source:d:\forritun\v2_stringlist\stringlist.cpp
+	"StringList.h"
+
