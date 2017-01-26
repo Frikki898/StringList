@@ -49,8 +49,9 @@ void StringList::insert(const string& item)
     curr->prev->next = node;
     curr->prev = node;
 
+    curr = curr->prev;
+
     size++;
-    currIndex++;
 }
 
 ostream& operator <<(ostream& outs, const StringList& lis)
@@ -92,23 +93,14 @@ void StringList::prev()
         curr = curr->prev;
         currIndex--;
     }
-    else
-    {
-        throw InvalidPositionException();
-    }
-
 }
 
 void StringList::next()
 {
-    if(curr->next != tail)
+    if(curr->next != NULL)
     {
         curr = curr->next;
         currIndex++;
-    }
-    else
-    {
-        throw InvalidPositionException();
     }
 }
 
@@ -142,23 +134,25 @@ int StringList::length() const
 void StringList::move_to_start()
 {
     curr = head->next;
+    currIndex = 0;
 }
 
 void StringList::move_to_end()
 {
     curr = tail;
+	currIndex = size;
 }
 
 void StringList::move_to_pos(int pos)
 {
-    if(pos >= 0 || pos <= size)
+    if(pos >= 0 && pos <= size)
     {
         move_to_start();
-
         for(int i = 0; i < pos; i++)
         {
             curr = curr->next;
         }
+        currIndex = pos;
     }
     else
     {
@@ -175,8 +169,6 @@ void StringList::append(const string& item)
     insert(item);
 
     move_to_pos(returnCurrTo);
-
-    size++;
 }
 
 void StringList::clear()
@@ -186,4 +178,5 @@ void StringList::clear()
     {
         remove();
     }
+    size = 0;
 }

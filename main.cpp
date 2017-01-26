@@ -7,7 +7,7 @@ int main()
 {
     StringList nodeList;
 
-    /*
+
     nodeList.insert("1");
     cout << "list: " << nodeList << endl;
     nodeList.insert("2");
@@ -20,7 +20,42 @@ int main()
     cout << "list: " << nodeList << endl;
     nodeList.insert("6");
     cout << "list: " << nodeList << endl;
+    cout << nodeList.curr_pos();
+    cout << " ";
+    cout << nodeList.get_value();
+    nodeList.next();
+    cout << endl;
+    cout << nodeList.curr_pos();
+    cout << " ";
+    cout << nodeList.get_value();
+    nodeList.next();
+    cout << endl;
+    cout << nodeList.curr_pos();
+    cout << " ";
+    cout << nodeList.get_value();
+    nodeList.next();
+    cout << endl;
+    cout << nodeList.curr_pos();
+    cout << " ";
+    cout << nodeList.get_value();
+    nodeList.next();
+    cout << endl;
+	cout << nodeList.curr_pos();
+    cout << " ";
+    cout << nodeList.get_value();
+    nodeList.next();
+    cout << endl;
+    cout << nodeList.curr_pos();
+    cout << " ";
+    cout << nodeList.get_value();
+    nodeList.next();
+    cout << endl;
+	cout << nodeList.curr_pos();
+    cout << " ";
+    nodeList.next();
+    cout << endl;
 
+	/*
     //throws cause curr is tail sentinel
     //cout << "getting value from curr: " << nodeList.get_value() << endl;
 
@@ -92,14 +127,13 @@ int main()
 
     nodeList.clear();
     cout << "list: " << nodeList << endl;
-    */
+	*/
 
-    /*
-    nodeList.append("ezyo");
+	cout << endl << endl;
+    nodeList.append("ezyp");
+    nodeList.append("asdf");
     cout << nodeList << endl;
 
-    nodeList.move_to_pos(13);
-    */
 
 
     return 0;

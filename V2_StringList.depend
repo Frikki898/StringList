@@ -17,3 +17,21 @@
 1485360357 source:d:\forritun\v2_stringlist\stringlist.cpp
 	"StringList.h"
 
+1485366206 source:c:\users\friðrik\desktop\skoli\gagnaskipan\verkefni\stringlist\stringlist\stringlist.cpp
+	"StringList.h"
+
+1485361349 c:\users\friðrik\desktop\skoli\gagnaskipan\verkefni\stringlist\stringlist\stringlist.h
+	<iostream>
+	<string>
+	"StringNode.h"
+
+1485361349 c:\users\friðrik\desktop\skoli\gagnaskipan\verkefni\stringlist\stringlist\stringnode.h
+	<string>
+
+1485361349 source:c:\users\friðrik\desktop\skoli\gagnaskipan\verkefni\stringlist\stringlist\stringnode.cpp
+	"StringNode.h"
+
+1485366231 source:c:\users\friðrik\desktop\skoli\gagnaskipan\verkefni\stringlist\stringlist\main.cpp
+	<iostream>
+	"StringList.h"
+
